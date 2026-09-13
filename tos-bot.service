@@ -1,0 +1,17 @@
+[Unit]
+Description=TOS ORB Trading Bot
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/var/www/denntech-site/tos_bot
+ExecStart=/var/www/denntech-site/tos_bot/.venv/bin/python main.py --host 127.0.0.1 --port 5001
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target

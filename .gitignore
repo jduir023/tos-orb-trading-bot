@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Runtime/secret data (API keys, tokens, logs, positions) — never commit
+saved_data/
+*.log
+
+# Backups / scratch
+*.bak-*
+*.bak_*
+_bak_*/
+
+# OS
+Thumbs.db
+.DS_Store

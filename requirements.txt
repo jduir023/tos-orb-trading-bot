@@ -1,0 +1,5 @@
+flask==3.0.3
+flask-socketio==5.3.6
+requests==2.32.3
+# gunicorn==22.0.0  # Linux/VPS only — uncomment when deploying
+websocket-client>=1.6.0
